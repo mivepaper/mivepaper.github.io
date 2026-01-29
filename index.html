@@ -132,17 +132,16 @@
       height: 180px;
       border-radius: 8px;
       object-fit: contain;
-      background: #f0f0f0;
     }
     
     /* Portrait videos (Complex) - input row */
+    /* Most videos are 3:4 ratio (832x1104), only #1 is 9:16 */
     .input-cell.portrait img,
     .input-cell.portrait video {
       width: 180px;
-      height: 320px;
+      height: 240px;
       border-radius: 8px;
       object-fit: contain;
-      background: #f0f0f0;
     }
     
     /* Row 2: Methods grid */
@@ -164,16 +163,15 @@
       height: 124px;
       border-radius: 6px;
       object-fit: contain;
-      background: #f0f0f0;
     }
     
     /* Portrait videos (Complex) - methods row */
+    /* Most videos are 3:4 ratio (832x1104), only #1 is 9:16 */
     .method-cell.portrait video {
       width: 120px;
-      height: 214px;
+      height: 160px;
       border-radius: 6px;
       object-fit: contain;
-      background: #f0f0f0;
     }
 
     /* Method label */
@@ -307,7 +305,7 @@
       .input-cell.portrait img,
       .input-cell.portrait video {
         width: 135px;
-        height: 240px;
+        height: 180px;
       }
       .method-cell.landscape video {
         width: 150px;
@@ -315,7 +313,7 @@
       }
       .method-cell.portrait video {
         width: 80px;
-        height: 142px;
+        height: 107px;
       }
     }
   </style>
@@ -522,9 +520,9 @@
       },
       methods: [
         { folder: 'lucy_edit', label: 'LucyEdit' },
-        { folder: 'wan_animate', label: 'WanAnimate' },
+        { folder: 'wan_animate_trimmed', label: 'WanAnimate' },
         { folder: 'videocof', label: 'VideoCOF' },
-        { folder: 'Kling', label: 'Kling' },
+        { folder: 'Kling_correct_ratio', label: 'Kling' },
         { folder: 'mive', label: 'Ours', highlight: true }
       ],
       orientation: 'portrait'
